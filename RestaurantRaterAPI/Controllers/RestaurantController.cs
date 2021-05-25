@@ -64,8 +64,7 @@ namespace RestaurantRaterAPI.Controllers
                 if(restaurant != null)
                 {
                     restaurant.Name = updatedRestaurant.Name;
-                    restaurant.Address = updatedRestaurant.Address;
-                    restaurant.Rating = updatedRestaurant.Rating;
+                    restaurant.Address = updatedRestaurant.Address; 
 
                     await _context.SaveChangesAsync();
                     return Ok();
