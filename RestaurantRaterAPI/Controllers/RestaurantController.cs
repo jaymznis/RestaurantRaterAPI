@@ -20,7 +20,7 @@ namespace RestaurantRaterAPI.Controllers
         {
             if (model == null)
             {
-                return BadRequest("your request boday cannot be empty");
+                return BadRequest("your request body cannot be empty");
             }
             //checks if every proprerty that is required is included from Restaurant class (model)
             if (ModelState.IsValid)
