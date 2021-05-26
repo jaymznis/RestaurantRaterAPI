@@ -18,13 +18,12 @@ namespace RestaurantRaterAPI.Models
         public string Address { get; set; }
         public virtual List<Rating> Ratings { get; set; } = new List<Rating>();
 
-      
         public double Rating
         {
             get
             {
                 double totalAverageRating = 0;
-                foreach(Rating rating in Ratings)
+                foreach (Rating rating in Ratings)
                 {
                     totalAverageRating += rating.AverageRating;
                 }
